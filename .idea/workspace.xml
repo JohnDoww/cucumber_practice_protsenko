@@ -5,8 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="235e9921-b3ae-4b40-8ad3-f4ce6749fce2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/helpers/BasePageMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/helpers/CommonPageMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/helpers/SearchPageMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/helpers/UserPageMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/BasePageElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/CommonPageElements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/SearchPageElements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/UserPageElements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/PropertiesFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/WebDriverFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/LICENSE.chromedriver" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/chromedriver.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/project.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/hellocucumber/seleniumAoutoRia.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hellocucumber/StepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hellocucumber/StepDefinitions.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +48,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2PQ3kmomdweviqwl6AVoK8302ox" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -43,6 +61,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
