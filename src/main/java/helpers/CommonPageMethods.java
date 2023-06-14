@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.CommonPageElements;
 
 import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 
 import static utils.PropertiesFactory.getProperty;
 
