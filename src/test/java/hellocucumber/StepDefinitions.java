@@ -22,8 +22,6 @@ import static utils.PropertiesFactory.getProperty;
 
 
 public class StepDefinitions {
-
-
     private final WebDriverFactory webDriverFactory = WebDriverFactory.getInstance();
     WebDriver driver = webDriverFactory.getDriver("chrome");
 
@@ -33,7 +31,6 @@ public class StepDefinitions {
     SearchPageMethods searchPageMethods = new SearchPageMethods(driver, searchPageElements);
     UserPageElements userPageElements = new UserPageElements(driver);
     UserPageMethods userPageMethods = new UserPageMethods(driver, userPageElements);
-
 
     String makerTitleFromHomePage;
     String carTitleFromSearch;
@@ -100,9 +97,10 @@ public class StepDefinitions {
         assertThat(nameCarToFavorites).containsIgnoringWhitespaces(carFromFavorites);
     }
 
-    @When("search car by using filer")
-    public void searchHondaCars() {
-        makerTitleFromHomePage = commonPageMethods.searchOldCarHonda();
+
+    @When("search car {} {} year by using filer")
+    public void searchCarYearByUsingFiler(int from, int to) {
+        makerTitleFromHomePage = commonPageMethods.searchOldCarHonda(from, to);
         carTitleFromSearch = searchPageMethods.makerTitleInSearchedCar();
     }
 
@@ -145,6 +143,4 @@ public class StepDefinitions {
     public void compareNameOfArticleAndTitle() {
         assertThat(expectedArticleTitle).containsIgnoringWhitespaces(actualArticleTitle);
     }
-
-
 }

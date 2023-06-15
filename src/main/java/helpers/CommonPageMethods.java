@@ -92,16 +92,16 @@ public class CommonPageMethods extends BasePageMethods {
      * This method fill in search area on the home page. We search only Honda cars, which produced 1989-1999.
      * Method return Maker name to compare it in the test.
      */
-    public String searchOldCarHonda() {
+    public String searchOldCarHonda( int from, int to) {
         commonPageElements.getInputCarMaker().click();
         commonPageElements.getHondaInList().click();
         String makerTitleOnHomePage = commonPageElements.getTitleMakerInHomePager().getAttribute("data-text");
-        commonPageElements.getInputCarYear().click();
 
+        commonPageElements.getInputCarYear().click();
         Select inputCarYearFrom = new Select(commonPageElements.getInputCarYearFrom());
-        inputCarYearFrom.selectByVisibleText("1989");
+        inputCarYearFrom.selectByVisibleText(Integer.toString(from));
         Select inputCarYearTo = new Select(commonPageElements.getInputCarYearTo());
-        inputCarYearTo.selectByVisibleText("1999");
+        inputCarYearTo.selectByVisibleText(Integer.toString(to));
 
         commonPageElements.getEmptySpaceHomePage().click();
         commonPageElements.getButtonSearchCar().click();

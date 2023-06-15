@@ -12,7 +12,12 @@ public class WebDriverFactory {
 
     private static WebDriverFactory instance = null;
     private WebDriver driver;
-
+    public static WebDriverFactory getInstance() {
+        if (instance == null) {
+            instance = new WebDriverFactory();
+        }
+        return instance;
+    }
 
     public WebDriver getDriver (final String nameOfBrowser) {
         switch (nameOfBrowser.toLowerCase()) {
@@ -29,12 +34,5 @@ public class WebDriverFactory {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(35));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(15));
         return driver;
-    }
-
-    public static WebDriverFactory getInstance() {
-        if (instance == null) {
-            instance = new WebDriverFactory();
-        }
-        return instance;
     }
 }

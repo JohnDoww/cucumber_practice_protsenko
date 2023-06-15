@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="235e9921-b3ae-4b40-8ad3-f4ce6749fce2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/helpers/CommonPageMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helpers/CommonPageMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/LICENSE.chromedriver" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/LICENSE.chromedriver" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/chromedriver.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/WebDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/WebDriverFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/hellocucumber/StepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hellocucumber/StepDefinitions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/hellocucumber/seleniumAoutoRia.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/hellocucumber/seleniumAoutoRia.feature" afterDir="false" />
     </list>
@@ -167,10 +163,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Cucumber Java.Feature: seleniumAoutoRia" />
+        <item itemvalue="Cucumber Java.Scenario: Search old car honda" />
         <item itemvalue="Cucumber Java.Scenario: Check registration flow" />
         <item itemvalue="Cucumber Java.Scenario: Compare article tittle and article link name" />
         <item itemvalue="Cucumber Java.Scenario: Check seller phone" />
-        <item itemvalue="Cucumber Java.Scenario: Search old car honda" />
       </list>
     </recent_temporary>
   </component>

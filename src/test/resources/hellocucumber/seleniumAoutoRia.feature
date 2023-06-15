@@ -12,10 +12,15 @@ Feature: Check home page and search page functionality
     And add car to favorites
     Then added car is exist in user's favorites list
 
-  Scenario: Search old car honda
+  Scenario Outline: Search car honda
     Given open home page
-    When search car by using filer
+    When search car <from> <to> year by using filer
     Then honda car is open
+    Examples:
+      | from | to   |
+      | 1990 | 1998 |
+      | 2021 | 2023 |
+
 
   Scenario: Check seller phone
     Given open home page
