@@ -9,7 +9,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.CommonPageElements;
 
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
 
 import static utils.PropertiesFactory.getProperty;
 
@@ -29,7 +28,6 @@ public class CommonPageMethods extends BasePageMethods {
         super(driver);
         this.driver = driver;
         this.commonPageElements = commonPageElements;
-
     }
 
     /**
@@ -40,7 +38,6 @@ public class CommonPageMethods extends BasePageMethods {
         commonPageElements.getEmailInputMailinator().click();
         commonPageElements.getEmailInputMailinator().sendKeys(generatedMailName);
         commonPageElements.getButtonCreateEmail().click();
-
     }
 
     /**
@@ -92,7 +89,7 @@ public class CommonPageMethods extends BasePageMethods {
      * This method fill in search area on the home page. We search only Honda cars, which produced 1989-1999.
      * Method return Maker name to compare it in the test.
      */
-    public String searchOldCarHonda( int from, int to) {
+    public String searchOldCarHonda(int from, int to) {
         commonPageElements.getInputCarMaker().click();
         commonPageElements.getHondaInList().click();
         String makerTitleOnHomePage = commonPageElements.getTitleMakerInHomePager().getAttribute("data-text");
@@ -113,23 +110,21 @@ public class CommonPageMethods extends BasePageMethods {
      * Filtering execute only by time range where cars were produced
      */
     public void findAnyCar() {
-        {
-            int from;
-            int to;
-            do {
-                from = (int) (Math.random() * 36) + 1980;
-                to = (int) (Math.random() * 33) + 1990;
-            } while (to > from);
-            commonPageElements.getInputCarYear().click();
+        int from;
+        int to;
+        do {
+            from = (int) (Math.random() * 36) + 1980;
+            to = (int) (Math.random() * 33) + 1990;
+        } while (to > from);
+        commonPageElements.getInputCarYear().click();
 
-            Select inputCarYearFrom = new Select(commonPageElements.getInputCarYearFrom());
-            inputCarYearFrom.selectByVisibleText(Integer.toString(from));
-            Select inputCarYearTo = new Select(commonPageElements.getInputCarYearTo());
-            inputCarYearTo.selectByVisibleText(Integer.toString(to));
+        Select inputCarYearFrom = new Select(commonPageElements.getInputCarYearFrom());
+        inputCarYearFrom.selectByVisibleText(Integer.toString(from));
+        Select inputCarYearTo = new Select(commonPageElements.getInputCarYearTo());
+        inputCarYearTo.selectByVisibleText(Integer.toString(to));
 
-            commonPageElements.getEmptySpaceHomePage().click();
-            commonPageElements.getButtonSearchCar().click();
-        }
+        commonPageElements.getEmptySpaceHomePage().click();
+        commonPageElements.getButtonSearchCar().click();
     }
 
     /**
@@ -150,6 +145,4 @@ public class CommonPageMethods extends BasePageMethods {
     public String titleOfOpenedArticle() {
         return commonPageElements.getTitleOpenedArticle().getText();
     }
-
-
 }
